@@ -1,7 +1,7 @@
-# Личный проект «Девайс»
+﻿# Личный проект «Девайс»
 
 * Студент: [Volodymyr Bilokur](https://up.htmlacademy.ru/htmlcss/16/user/28642).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
 
 ---
 
