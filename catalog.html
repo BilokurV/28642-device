@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a>DEVICE</a>
+        </div>
+
+        <div class="main-navigation">
+          <form action="https://echo.htmlacademy.ru" method=”post”>
+            <input type="search" name="search" value="search" placeholder="Поиск по сайту">
+          </form>
+
+          <a class="login" href="#">Войти</a>
+          <a class="compare" href="#">сравнить</a>
+          <a class="basket" href="#">корзина</a>
+        </div>
+        
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a href="#">каталог товаров</a>
+            </li>
+            <li>
+              <a href="#">доставка</a>
+            </li>
+            <li>
+              <a href="#">гарантия</a>
+            </li>
+            <li>
+              <a href="#">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="container">
+      <h1>Моноподы для селфи</h1>
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li>
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+      
+      <aside class="filters">
+        <h2>Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method=”post”>
+        <h3>Стоимость</h3>
+          <label>
+            <input type="range" name="range" value="range" min="0" max="5000">от 0 до 5000
+          </label>
+          
+        <h3>Цвет</h3>
+          <label>
+            <input type="checkbox" name="black" value="black">чёрный
+          </label>
+          <label>
+            <input type="checkbox" name="white" value="white">белый
+          </label>
+          <label>
+            <input type="checkbox" name="blue" value="blue">синий
+          </label>
+          <label>
+            <input type="checkbox" name="red" value="red">красный
+          </label>
+          <label>
+            <input type="checkbox" name="purple" value="purple">розовый
+          </label>
+
+        <h3>Bluetooth</h3>
+          <label>
+            <input type="radio" name="bluetooth" value="is">Есть
+          </label>
+          <label>
+            <input type="radio" name="bluetooth" value="isnot">Нет
+          </label>
+        
+          <button class="btn show" type="submit" name="filters" value="filters">Показать</button>
+        </form>
+      </aside>
+      
+      <div class="sorting">
+        <h2>Сортировка:</h2>
+        <form action="https://echo.htmlacademy.ru" method=”post”>
+          <label>
+            <input type="radio" name="sorting" value="price">По цене
+          </label>
+          <label>
+            <input type="radio" name="sorting" value="type">По типу
+          </label>
+          <label>
+            <input type="radio" name="sorting" value="popular">По популярности
+          </label>
+        </form>
+        <div class="keys-updown">
+          <a href="#">Up</a>
+          <a href="#">Down</a>
+        </div>
+      </div>
+      
+      <div class="catalog-item">
+        <div class="item">
+          <a href="#">
+            <img src="img/" width="" height="" alt="Любительская селфи-палка">
+            <b>Любительская селфи-палка</b>
+            <span>500 РУБ.</span>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#">
+            <img src="img/" width="" height="" alt="Профессиональная селфи-палка ">
+            <b>Профессиональная селфи-палка </b>
+            <span>1 500 РУБ.</span>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#">
+            <img src="img/" width="" height="" alt="Непотопляемая селфи-палка">
+            <b>Непотопляемая селфи-палка</b>
+            <span>2 500 РУБ.</span>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#">
+            <img src="img/" width="" height="" alt="Селфи-палка «Следуй за мной»">
+            <b>Селфи-палка «Следуй за мной»</b>
+            <span>4 900 РУБ.</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="catalog-control">
+        <a href="#">Назад</a>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+        <a href="#">Вперед</a>
+      </div>
+    </main>
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer logo">DEVICE</div>
+        <div class="footer login">
+          <a href="#">Войти</a>
+          <a href="#">сравнить</a>
+          <a href="#">корзина</a>
+        </div>
+        
+        <p class="footer address">г. Москва, ул. Строителей, 15</p>
+        <div class="footer menu">
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <p class="footer phone">Тел.: +7 (495) 495-95-95</p>
+        
+        <div class="footer social">
+          <a class="social-btn social-btn-fb" href="#">facebook</a>
+          <a class="social-btn social-btn-inst" href="#">instagram</a>
+          <a class="social-btn social-btn-twit" href="#">twiter</a>
+        </div>
+        <div class="footer img"></div>
+      </div>
+    </footer>
+  </body>
+</html>
+
