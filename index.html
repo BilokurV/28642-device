@@ -27,6 +27,16 @@
           <ul>
             <li>
               <a href="#">каталог товаров</a>
+              <ul class="menu-catalog">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                
+                <li><a href="#">Фитнесс-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
             </li>
             <li>
               <a href="#">доставка</a>
@@ -45,7 +55,7 @@
     <main class="container">
       <section class="main-slider">
         <div class="slide slide-1">
-          <img src="img/" width="" height="" alt="Фото серфи палки">
+          <img src="img/slide_1.png" width="384" height="486" alt="Фото серфи палки">
           <div class="slide-description">
             <span>01</span>
             <h2>Делай селфи,<br>
@@ -69,7 +79,7 @@
         </div>
         
         <div class="slide slide-2">
-          <img src="img/" width="" height="" alt="Фото Фитнес браслеты">
+          <img src="img/slide_2.png" width="345" height="485" alt="Фото Фитнес браслеты">
           <div class="slide-description">
             <span>02</span>
             <h2>Худеем<br>
@@ -94,7 +104,7 @@
         </div>
         
         <div class="slide slide-3">
-          <img src="img/" width="" height="" alt="Фото Квадрокоптеры">
+          <img src="img/slide_3.png" width="526" height="334" alt="Фото Квадрокоптеры">
           <div class="slide-description">
             <span>03</span>
             <h2>Порхает как бабочка,<br>
@@ -128,42 +138,42 @@
       <section class="catalog-names">
         <a href="#">
           <figure>
-            <img src="img/" width="" height="" alt="Виртуальная реальность">
+            <img src="img/popular_1.png" width="97" height="55" alt="Виртуальная реальность">
             <figcaption>Виртуальная реальность</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/" width="" height="" alt="Моноподы для селфи">
+            <img src="img/popular_2.png" width="86" height="117" alt="Моноподы для селфи">
             <figcaption>Моноподы для селфи</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/" width="" height="" alt="Экшн-камеры">
+            <img src="img/popular_3.png" width="71" height="87" alt="Экшн-камеры">
             <figcaption>Экшн-камеры</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/" width="" height="" alt="Фитнесс браслеты">
+            <img src="img/popular_4.png" width="107" height="65" alt="Фитнесс браслеты">
             <figcaption>Фитнесс браслеты</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/" width="" height="" alt="Умные часы">
+            <img src="img/popular_5.png" width="56" height="98" alt="Умные часы">
             <figcaption>Умные часы</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/" width="" height="" alt="Квадрокоптеры">
+            <img src="img/popular_6.png" width="132" height="69" alt="Квадрокоптеры">
             <figcaption>Квадрокоптеры</figcaption>
           </figure>
         </a>
@@ -193,10 +203,10 @@
       </section>
       
       <section class="logotypes">
-        <a href="#"><img src="img/" width="" height="" alt="DJI">DJI</a>
-        <a href="#"><img src="img/" width="" height="" alt="Gardets">Gardets</a>
-        <a href="#"><img src="img/" width="" height="" alt="GoPro">GoPro</a>
-        <a href="#"><img src="img/" width="" height="" alt="VIVE">VIVE</a>
+        <a href="#"><img src="img/logo_1.png" width="260" height="100" alt="DJI">DJI</a>
+        <a href="#"><img src="img/logo_2.png" width="260" height="100" alt="Gardets">Gardets</a>
+        <a href="#"><img src="img/logo_3.png" width="260" height="100" alt="GoPro">GoPro</a>
+        <a href="#"><img src="img/logo_4.png" width="260" height="100" alt="VIVE">VIVE</a>
       </section>
       
       <section class="info">
@@ -215,10 +225,31 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#">
-          <img src="img/" width="" height="" alt="Карта расположения">
+          <img src="img/map.jpg" width="560" height="222" alt="Карта расположения">
         </a>
         <a href="#">НАпишите нам</a>
       </section>
+      
+      <div class="popup write-us">
+        <form action="https://echo.htmlacademy.ru" method=”post”>
+          <label>Ваше имя:
+            <input type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label>Ваш e-mail:
+            <input type="email" name="email" value="email" placeholder="Для отправки ответа">
+          </label>
+          <p>Текст письма:
+            <textarea name="emailtext" rows="5" cols="40" placeholder="В свободной форме">В свободной форме</textarea>
+          </p>
+          <button class="btn" type="submit" name="write-us" value="write-us">Отправить</button>
+        </form>
+        <button class="btn close" type="button" name="close" value="close">X</button>
+      </div>
+      
+      <div class="popup map">
+        <img src="img/map.jpg" width="960" height="559" alt="Карта расположения">
+        <button class="btn close" type="button" name="close" value="close">X</button>
+      </div>
     </main>
     
     <footer class="main-footer">
