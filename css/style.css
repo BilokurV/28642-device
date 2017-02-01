@@ -1,18 +1,201 @@
-body{
-  font-family: Gilroy, Open Sans, Arial, sans-serif;
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/gilroyextrabold.woff") format("woff"),
+       url("/fonts/Gilroyextrabold.ttf") format("truetype");
+}
+
+body {
+  font-family: Open Sans, Gilroy, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: lighter;
 }
 
-h1,h2{
+h1,h2 {
   font-size: 47px;
   line-height: 60px;
   font-weight: bolder;
 }
 
-h3{
+h3 {
   font-size: 18px;
   line-height: 26px;
   font-weight: bolder;
 }
+
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background: #000 url("/img/device-index.jpg") no-repeat -120px 0;
+  background-size: 1440px auto;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*  Start header  */
+.main-header {
+  margin: 0 20px;
+  margin-top: 40px;
+  background-color: #ffe27f;
+  
+  opacity: 0.6;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto ;
+}
+
+.logo {
+  position: relative;
+  top: -16px;
+  
+  
+/*  font-family: Gilroy;
+  font-weight: 900;
+  font-size: 48px;
+  color: black;
+*/
+}
+
+.main-navigation {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.main-navigation input {
+  opacity: 0.5;
+  
+  float: left;
+  display: inline-block;
+  margin-left: 36px;
+  font-size: 15px;
+}
+
+.main-navigation a {
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 2px;
+  
+}
+
+.main-navigation a.login {
+  margin-right: 170px;
+  width: 75px;
+}
+
+.main-menu {
+  margin-top: 35px;
+  padding-bottom: 160px;
+}
+
+.main-menu ul {
+  text-align: right;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu li:first-child {
+  float: left;
+  width: 250px;
+  text-align: left;
+}
+
+.main-menu li:first-child:after {
+  content: '+';
+}
+
+.main-menu li:nth-child(2) {
+  width: 130px;
+}
+
+.main-menu li:nth-child(3) {
+  width: 115px;
+  margin-left: 25px;
+}
+.main-menu li:last-child {
+  width: 125px;
+  margin-left: 105px;
+}
+
+.menu-catalog {
+  display: none;
+}
+/*  End header  */
+
+/*  Start main  */
+.slide{
+  mrgin-top: -110px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slide img{
+  float: left;
+  margin-left: 30px;
+}
+
+.slide-2, .slide-3{
+  display: none;
+}
+
+.slide-description{
+  margin-left: 535px;
+  margin-top: 75px;
+  height: 400px;
+}
+
+.slide-description .number{
+  float: right;
+  width: 180px;
+  height: 140px;
+}
+
+.slide-description table{
+  width: 450px;
+  height: 80px;
+  margin-top: 60px;
+}
+
+.slider-buttons{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  End main  */
+
+
+
+
+
+
+
+
