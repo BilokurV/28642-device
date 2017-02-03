@@ -27,7 +27,7 @@
           <ul>
             <li>
               <a href="#">каталог товаров</a>
-<!--
+
               <ul class="menu-catalog">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
@@ -38,7 +38,7 @@
                 
                 <li><a href="#">Квадрокоптеры</a></li>
               </ul>
--->            </li>
+            </li>
             <li>
               <a href="#">доставка</a>
             </li>
@@ -57,14 +57,15 @@
       <section class="container">
         <div class="slide slide-1">
           <img src="img/slide_1.png" width="384" height="486" alt="Фото серфи палки">
+          <span class="number">01</span>
           <div class="slide-description">
-            <span class="number">01</span>
             <h2>Делай селфи,<br>
               как Бен Стиллер!</h2>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             
-            <span>Подробнее</span>
+            <a class="detail" href="#">Подробнее</a>
             <table>
+              <col span="3">
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
@@ -136,100 +137,118 @@
         </div>
       </section>
       
-      <section class="catalog-names">
+      <section class="catalog-names container">
         <a href="#">
           <figure>
-            <img src="img/popular_1.png" width="97" height="55" alt="Виртуальная реальность">
+            <div>
+              <img src="img/popular_1.png" width="97" height="55" alt="Виртуальная реальность">
+            </div>
             <figcaption>Виртуальная реальность</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/popular_2.png" width="86" height="117" alt="Моноподы для селфи">
+            <div>
+              <img src="img/popular_2.png" width="86" height="117" alt="Моноподы для селфи">
+            </div>
             <figcaption>Моноподы для селфи</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/popular_3.png" width="71" height="87" alt="Экшн-камеры">
+            <div>
+              <img src="img/popular_3.png" width="71" height="87" alt="Экшн-камеры">
+            </div>
             <figcaption>Экшн-камеры</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/popular_4.png" width="107" height="65" alt="Фитнесс браслеты">
+            <div>
+              <img src="img/popular_4.png" width="107" height="65" alt="Фитнесс браслеты">
+            </div>
             <figcaption>Фитнесс браслеты</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/popular_5.png" width="56" height="98" alt="Умные часы">
+            <div>
+              <img src="img/popular_5.png" width="56" height="98" alt="Умные часы">
+            </div>
             <figcaption>Умные часы</figcaption>
           </figure>
         </a>
         
         <a href="#">
           <figure>
-            <img src="img/popular_6.png" width="132" height="69" alt="Квадрокоптеры">
-            <figcaption>Квадрокоптеры</figcaption>
+            <div>
+              <img src="img/popular_6.png" width="132" height="69" alt="Квадрокоптеры">
+            </div>           <figcaption>Квадрокоптеры</figcaption>
           </figure>
         </a>
       </section>
       
       <section class="services-slider">
-        <ul>
-          <li><a href="#">доставка</a></li>
-          <li><a href="#">гарантия</a></li>
-          <li><a href="#">кредит</a></li>
-        </ul>
-        
-        <div class="service-item delivery">
-          <h2>доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        
-        <div class="service-item guarantee">
-          <h2>гарантия</h2>
-          <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        
-        <div class="service-item credit">
-          <h2>кредит</h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        <div class="container">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slides">
+            <label for="btn-1">доставка</label>
+            <label for="btn-2">гарантия</label>
+            <label for="btn-3">кредит</label>
+          </div>
+          
+          <div class="service-item delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+
+          <div class="service-item guarantee">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+
+          <div class="service-item credit">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </div>
       </section>
       
-      <section class="logotypes">
-        <a href="#"><img src="img/logo_1.png" width="260" height="100" alt="DJI">DJI</a>
-        <a href="#"><img src="img/logo_2.png" width="260" height="100" alt="Gardets">Gardets</a>
-        <a href="#"><img src="img/logo_3.png" width="260" height="100" alt="GoPro">GoPro</a>
-        <a href="#"><img src="img/logo_4.png" width="260" height="100" alt="VIVE">VIVE</a>
+      <section class="logotypes container">
+        <a href="#"><img src="img/logo_1.png" width="260" height="100" alt="DJI"></a>
+        <a href="#"><img src="img/logo_2.png" width="260" height="100" alt="Gardets"></a>
+        <a href="#"><img src="img/logo_3.png" width="260" height="100" alt="GoPro"></a>
+        <a href="#"><img src="img/logo_4.png" width="260" height="100" alt="VIVE"></a>
       </section>
       
-      <section class="info">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#">Подробнее о нас</a>
-      </section>
-      
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#">
-          <img src="img/map.jpg" width="560" height="222" alt="Карта расположения">
-        </a>
-        <a href="#">НАпишите нам</a>
-      </section>
+      <div class="container">
+        <section class="info">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="detail" href="#">Подробнее о нас</a>
+        </section>
+
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="map" href="#">
+            <img src="img/map.jpg" width="560" height="222" alt="Карта расположения">
+          </a>
+          <a class="detail" href="#">НАпишите нам</a>
+        </section>
+      </div>
       
       <div class="popup write-us">
         <form action="https://echo.htmlacademy.ru" method=”post”>
@@ -255,29 +274,33 @@
     
     <footer class="main-footer">
       <div class="container">
-        <div class="footer logo">DEVICE</div>
-        <div class="footer login">
-          <a href="#">Войти</a>
-          <a href="#">сравнить</a>
-          <a href="#">корзина</a>
+        
+        <div class="footer-logo">
+          <span>DEVICE</span>
+          <p class="address">г. Москва, ул. Строителей, 15</p>
         </div>
         
-        <p class="footer address">г. Москва, ул. Строителей, 15</p>
-        <div class="footer menu">
+        <div class="footer-login">
+          <a href="#">Войти</a>
+          <a href="#">Сравнить</a>
+          <a href="#">Корзина</a>
+          <p class="phone">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        
+        <div class="footer-menu">
           <ul>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-        </div>
-        <p class="footer phone">Тел.: +7 (495) 495-95-95</p>
         
-        <div class="footer social">
-          <a class="social-btn social-btn-fb" href="#">facebook</a>
-          <a class="social-btn social-btn-inst" href="#">instagram</a>
-          <a class="social-btn social-btn-twit" href="#">twiter</a>
+          <div class="footer-social">
+            <a class="social-btn social-btn-fb" href="#">facebook</a>
+            <a class="social-btn social-btn-inst" href="#">instagram</a>
+            <a class="social-btn social-btn-twit" href="#">twiter</a>
+          </div>
         </div>
-        <div class="footer img"></div>
+        
       </div>
     </footer>
   </body>
