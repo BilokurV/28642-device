@@ -1,27 +1,32 @@
 @font-face {
-  font-family: GilroyBold;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
   src: url("/fonts/gilroyextrabold.woff") format("woff"),
        url("/fonts/Gilroyextrabold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: GilroyLight;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
   src: url("/fonts/gilroylight.woff") format("woff"),
        url("/fonts/Gilroylight.ttf") format("truetype");
 }
 
 body {
-  font-family: Open Sans, GilroyBold, GilroyLight, Arial, sans-serif;
+  font-family: 'Open Sans', Gilroy, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: lighter;
 }
 
 h1,h2 {
-  font-family: GilroyBold;
+  font-family: Gilroy;
   font-size: 47px;
   line-height: 56px;
   font-weight: 900;
+  margin: 0;
 }
 
 h3 {
@@ -46,12 +51,13 @@ body {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 
 /*  Start header  */
 .container{
-  width: 1160px;/*  for RESPONSIVE use 90%  */
+  width: 1160px;
   margin: 0 auto;
   position: relative;
 }
@@ -59,12 +65,11 @@ a {
 .main-header .container{
   margin-top: 40px;
   background-color: #ffe27f;
-  
 }
 
 .logo {
   position: relative;
-  top: -16px;
+  top: -15px;
   margin-left: 5%;
   
   font-family: Gilroy;
@@ -78,14 +83,12 @@ a {
   margin-right: 5%;
   margin-top: 14px;
   text-align: right;
-  
 }
 
 .main-navigation input {
-  opacity: 0.5;
-  
   float: left;
   font-size: 15px;
+  padding-left: 30px;
 }
 
 .main-navigation a {
@@ -104,7 +107,7 @@ a {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 35px;
-  padding-bottom: 160px;
+  padding-bottom: 145px;
   
   font-family: Gilroy;
   font-weight: 900;
@@ -114,43 +117,70 @@ a {
   letter-spacing: 0.2em;
 }
 
-.main-menu ul {
+.level{
   text-align: right;
+  padding-left: 0;
 }
 
-.main-menu li {
+.level>li {
   display: inline-block;
   width: 130px;
 }
 
-.main-menu li:first-child {
+.level>li:first-child {
   float: left;
   width: 255px;
   text-align: left;
 }
 
-.main-menu li:first-child:after {
-  content: '+';
-  padding-left: 7px;
-  font-size: 20px;
-  font-weight: 100;
+.level>li:first-child:hover .menu-catalog{
+  display: inline-block;
 }
 
-.main-menu li:nth-child(3) {
+.level>li:first-child:after {
+  content: '+';
+  position: absolute;
+  padding-left: 10px;
+  font-size: 38px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.level>li:nth-child(3) {
   margin-left: 12px;
 }
-.main-menu li:last-child {
+.level>li:last-child {
   margin-left: 91px;
 }
 
 .menu-catalog {
+  position: absolute;
   display: none;
+  width: 1140px;
+  top: 170px;
+  left: 0px;
+  background-color: #ffe393;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  z-index: 10;
+  
+  font-family: 'Open Sans';
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: normal;
 }
+
+.menu-catalog ul{
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+}
+
 /*  End header  */
 
 /*  Start main  */
 .slide{
-  margin-top: -110px;
+  margin-top: -115px;
   margin-left: 5%;
   margin-right: 5%;
   position: relative;
@@ -167,9 +197,8 @@ a {
 }
 
 .slide-description{
-  padding-top: 78px;
+  padding-top: 80px;
   margin-left: 51.5%;
-  
 }
 
 .number{
@@ -178,7 +207,7 @@ a {
   width: 175px;
   
   
-  font-family: GilroyBold;
+  font-family: Gilroy;
   font-size: 180px;
   font-weight: 900;
   line-height: 150px;
@@ -186,8 +215,9 @@ a {
 }
 
 .slide-description p{
-  padding-top: 19px;
-  
+  padding-top: 4px;
+  width: 480px;
+  margin-bottom: 0;
 }
 
 .detail{
@@ -234,20 +264,35 @@ a {
 }
 
 td{
+  font-family: Gilroy;
   font-size: 36px;
   line-height: 58px;
+}
+
+td:nth-child(2){
+  width: 140px;
+}
+
+th{
+  font-family: 'Open Sans';
+  font-size: 13px;
+  line-height: 14px;
 }
 
 .slider-buttons{
   display: inline-block;
   position: absolute;
-  right: 70px;
-  bottom: 135px
+  right: 75px;
+  bottom: 130px;
 }
+.slider-buttons input{
+  margin: 0 8px;
+}
+
 
 /*  example of FLEX  */
 .catalog-names{
-  margin-top: 110px;
+  margin-top: 115px;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -265,25 +310,29 @@ td{
   width: 160px;
   height: 160px;
   background-color: #ffe27f;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 }
 
 .catalog-names a:nth-child(2) div{
   align-items: flex-end;
 }
 
-.catalog-names figcaption{
+.catalog-names span{
+  display: inline-block;
   font-family: Gilroy;
   font-weight: 900;
   font-size: 18px;
   color: black;
   line-height: 21px;
-  padding-top: 13px;
-  padding-bottom: 15px;
+  vertical-align: top;
+}
+
+.catalog-names a:nth-child(2) span{
+  width: 120px;
 }
 
 .services-slider{
-  margin-top: 170px;
+  margin-top: 185px;
   background-color: #e6e6e6;
   height: 287px;
 }
@@ -350,7 +399,7 @@ td{
 }
 
 .service-item h2{
-  padding-bottom: 28px;
+  padding-bottom: 13px;
 }
 
 .guarantee, .credit{
@@ -392,8 +441,9 @@ td{
 }
 
 .info ul{
+  margin-left: 3px;
+  padding: 0;
   margin-top: 66px;
-  
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 900;
@@ -413,7 +463,7 @@ td{
 
 .contacts .map{
   display: inline-block;
-  margin-top: 39px;
+  margin-top: 24px;
   margin-left: 3px;
 }
 
@@ -427,7 +477,7 @@ td{
 .main-footer{
   text-align: center;
   background-color: #444444;
-  margin-top: 49px;
+  margin-top: 34px;
   padding-top: 70px;
   color: #ffffff;
 }
@@ -435,6 +485,7 @@ td{
 .footer-logo{
   float: left;
   margin-bottom: 120px;
+  text-align: left;
 }
 
 .footer-logo span{
@@ -446,7 +497,7 @@ td{
 }
 
 .address{
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -454,7 +505,6 @@ td{
   position: absolute;
   right: 0px;
   margin-top: -6px;
-  
 }
 
 .footer-login a{
@@ -470,13 +520,13 @@ td{
 
 .footer-menu{
   display: inline-block;
-  margin-left: -190px;
-  margin-top: 65px;
+  margin-left: -230px;
+  margin-top: 48px;
+  padding-bottom: 10px;
 }
 
 .footer-menu li{
-  display: inline-block;
-  
+  display: inline-block;  
 }
 
 .footer-menu li:nth-child(2){
@@ -496,8 +546,5 @@ td{
 .footer-social{
   margin: 60px 0;
 }
-
-
-
 
 /*  End footer  */

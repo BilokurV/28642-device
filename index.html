@@ -24,20 +24,24 @@
         </div>
         
         <nav class="main-menu">
-          <ul>
+          <ul class="level">
             <li>
               <a href="#">каталог товаров</a>
 
-              <ul class="menu-catalog">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                
-                <li><a href="#">Фитнесс-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
+              <div class="menu-catalog">
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Фитнесс-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="#">доставка</a>
@@ -72,9 +76,9 @@
                 <td>Карбон</td>
               </tr>
               <tr>
-                <th>длина палки</th>
-                <th>вес палки</th>
-                <th>материал</th>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
               </tr>
             </table>
           </div>
@@ -131,64 +135,57 @@
         </div>
         
         <div class="slider-buttons">
-          <button type="button">01</button>
-          <button type="button">02</button>
-          <button type="button">03</button>
+          <input type="radio" id="btn-01" name="slide" checked>
+          <input type="radio" id="btn-02" name="slide">
+          <input type="radio" id="btn-03" name="slide">
+          <div>
+            <label for="btn-01"></label>
+            <label for="btn-02"></label>
+            <label for="btn-03"></label>
+          </div>
         </div>
       </section>
       
       <section class="catalog-names container">
         <a href="#">
-          <figure>
             <div>
               <img src="img/popular_1.png" width="97" height="55" alt="Виртуальная реальность">
             </div>
-            <figcaption>Виртуальная реальность</figcaption>
-          </figure>
+            <span>Виртуальная реальность</span>
         </a>
         
         <a href="#">
-          <figure>
             <div>
               <img src="img/popular_2.png" width="86" height="117" alt="Моноподы для селфи">
             </div>
-            <figcaption>Моноподы для селфи</figcaption>
-          </figure>
+            <span>Моноподы для селфи</span>
         </a>
         
         <a href="#">
-          <figure>
             <div>
               <img src="img/popular_3.png" width="71" height="87" alt="Экшн-камеры">
             </div>
-            <figcaption>Экшн-камеры</figcaption>
-          </figure>
+            <span>Экшн-камеры</span>
         </a>
         
         <a href="#">
-          <figure>
             <div>
               <img src="img/popular_4.png" width="107" height="65" alt="Фитнесс браслеты">
             </div>
-            <figcaption>Фитнесс браслеты</figcaption>
-          </figure>
+            <span>Фитнесс браслеты</span>
         </a>
         
         <a href="#">
-          <figure>
             <div>
               <img src="img/popular_5.png" width="56" height="98" alt="Умные часы">
             </div>
-            <figcaption>Умные часы</figcaption>
-          </figure>
+            <span>Умные часы</span>
         </a>
         
         <a href="#">
-          <figure>
             <div>
               <img src="img/popular_6.png" width="132" height="69" alt="Квадрокоптеры">
-            </div>           <figcaption>Квадрокоптеры</figcaption>
-          </figure>
+            </div>           <span>Квадрокоптеры</span>
         </a>
       </section>
       
