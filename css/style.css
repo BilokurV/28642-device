@@ -44,7 +44,7 @@ h3 {
 
 body {
 /*  For display with resolution 1280 px  */
-  background: #000 url("/img/device-index.jpg") no-repeat 50% 0;
+  bckground: #000 url("/img/device-catalog.jpg") no-repeat 50% 0;
   background-size: 1440px auto;
   opacity: 0.7;
 }
@@ -69,7 +69,7 @@ a {
 
 .logo {
   position: relative;
-  top: -15px;
+  top: -13px;
   margin-left: 5%;
   
   font-family: Gilroy;
@@ -82,7 +82,7 @@ a {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 14px;
-  text-align: right;
+  
 }
 
 .main-navigation input {
@@ -93,21 +93,36 @@ a {
 
 .main-navigation a {
   display: inline-block;
-  margin-left: 28px;
   margin-right: 3px;
-  width: 90px;
+  padding-left: 31px;  
 }
 
-.main-navigation a.login {
-  margin-right: 183px;
-  
+.main-navigation .login {
+  float: left;
+  margin-left: 310px;
+  padding-right: 15px;
+  max-width: 184px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+a.logout{
+  padding-left: 0;  
+}
+
+.compare{
+  float: right;
+  padding-right: 30px;
+}
+
+.basket{
+  float: right;
 }
 
 .main-menu {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 35px;
-  padding-bottom: 145px;
+  padding-bottom: 33px;
   
   font-family: Gilroy;
   font-weight: 900;
@@ -176,7 +191,43 @@ a {
   vertical-align: top;
 }
 
+/*  Only for Index.html  */
+.marker{
+  width: 100%;
+  height: 77px;
+}
+
+.marker hr{
+  width: 100px;
+  height: 7px;
+  margin-left: 599px;
+  margin-top: 35px;
+  background-color: #ffffff;
+}
+/* Start HEADER for catalog.html section */
+.arrows{
+  padding-left: 60px;
+  padding-top: 29px;
+  background-color: #ffffff;
+}
+
+.breadcrumbs ul{
+  padding: 0;
+}
+
+.breadcrumbs li{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.breadcrumbs li:not(:last-child)::after{
+  content: '>';
+  font-weight: 900;
+}
+
+/* End HEADER for catalog.html section */
 /*  End header  */
+
 
 /*  Start main  */
 .slide{
@@ -198,7 +249,7 @@ a {
 
 .slide-description{
   padding-top: 80px;
-  margin-left: 51.5%;
+  margin-left: 500px;
 }
 
 .number{
@@ -351,7 +402,7 @@ th{
   display: inline-block;
   border-right: 7px solid #000;
   min-width: 100px;
-  width: 24%;
+  width: 278px;
   padding-top: 80px;
   padding-bottom: 50px;
   margin-left: -1px;
@@ -382,7 +433,7 @@ th{
 
 .service-item{
   display: inline-block;
-  max-width: 39%;
+  max-width: 455px;
   margin-left: 113px;
 }
 
@@ -470,11 +521,37 @@ th{
 .popup{
   display: none;
 }
+/* Start MAIN for catalog.html section */
+.filters{
+  width: 300px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start MAIN for catalog.html section */
 /*  End main  */
+
 /*  Start footer  */
+
 .main-footer{
+  width: 100%;
+  
   text-align: center;
   background-color: #444444;
   margin-top: 34px;
@@ -546,5 +623,5 @@ th{
 .footer-social{
   margin: 60px 0;
 }
-
+*/
 /*  End footer  */
