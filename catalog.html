@@ -72,120 +72,142 @@
           </div>
         </div>  
       </div>
-      
     </header>
     
     <main class="catalog">
-      <div class="container">
       
       <aside class="filters">
         <h2>Фильтр:</h2>
-        <form action="https://echo.htmlacademy.ru" method=”post”>
-        <h3>Стоимость</h3>
-          <label>
-            <input type="range" name="range" value="range" min="0" max="5000">от 0 до 5000
-          </label>
-          
-        <h3>Цвет</h3>
-          <label>
-            <input type="checkbox" name="black" value="black">чёрный
-          </label>
-          <label>
-            <input type="checkbox" name="white" value="white">белый
-          </label>
-          <label>
-            <input type="checkbox" name="blue" value="blue">синий
-          </label>
-          <label>
-            <input type="checkbox" name="red" value="red">красный
-          </label>
-          <label>
-            <input type="checkbox" name="purple" value="purple">розовый
-          </label>
+        <div class="form">
+          <form action="https://echo.htmlacademy.ru" method=”post”>
+          <h3>Стоимость</h3>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 1%; width: 55%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от 
+                <input name="min-price" type="text" value="0">
+              </label>
+              <label class="max-price">до
+                <input name="max-price" type="text" value="5000">
+              </label>
+            </div>
+          </div>
 
-        <h3>Bluetooth</h3>
-          <label>
-            <input type="radio" name="bluetooth" value="is">Есть
-          </label>
-          <label>
-            <input type="radio" name="bluetooth" value="isnot">Нет
-          </label>
-        
-          <button class="btn show" type="submit" name="filters" value="filters">Показать</button>
-        </form>
+          <h3>Цвет</h3>
+          <div class="color">
+            <label>
+              <input type="checkbox" name="black" value="black" checked>чёрный
+            </label>
+            <label>
+              <input type="checkbox" name="white" value="white">белый
+            </label>
+            <label>
+              <input type="checkbox" name="blue" value="blue" checked>синий
+            </label>
+            <label>
+              <input type="checkbox" name="red" value="red" checked>красный
+            </label>
+            <label>
+              <input type="checkbox" name="purple" value="purple">розовый
+            </label>
+          </div>
+
+          <h3>Bluetooth</h3>
+          <div class="bluetooth">
+            <label>
+              <input type="radio" name="bluetooth" value="yes" checked>Есть
+            </label>
+            <label>
+              <input type="radio" name="bluetooth" value="no">Нет
+            </label>
+          </div>
+
+          <a class="detail" type="submit" href="#">Показать</a>
+          </form>
+        </div>
       </aside>
-<!--      
-      <div class="sorting">
-        <h2>Сортировка:</h2>
-        <form action="https://echo.htmlacademy.ru" method=”post”>
-          <label>
-            <input type="radio" name="sorting" value="price">По цене
-          </label>
-          <label>
-            <input type="radio" name="sorting" value="type">По типу
-          </label>
-          <label>
-            <input type="radio" name="sorting" value="popular">По популярности
-          </label>
-        </form>
-        <div class="keys-updown">
-          <a href="#">Up</a>
-          <a href="#">Down</a>
-        </div>
-      </div>
-      
+
       <div class="catalog-item">
-        <div class="item">
-          <a href="#">
-            <img src="img/item_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <b>Любительская селфи-палка</b>
-            <span>500 РУБ.</span>
-          </a>
+        <div class="sorting">
+          <h2>Сортировка:</h2>
+          <form action="https://echo.htmlacademy.ru" method=”post”>
+            <label>
+              <input type="radio" name="sorting" value="price" checked>
+              <span>По цене</span>
+            </label>
+            <label>
+              <input type="radio" name="sorting" value="type">
+              <span>По типу</span>
+            </label>
+            <label>
+              <input type="radio" name="sorting" value="popular"><span>По популярности</span>
+            </label>
+          </form>
+          <div class="keys-updown">
+            <a href="#">Up</a>
+            <a href="#">Down</a>
+          </div>
         </div>
+      
+        <div class="items">
+          <div class="item">
+            <a href="#">
+              <img src="img/item_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <b>Любительская селфи-палка</b>
+              <span>500 РУБ.</span>
+            </a>
+          </div>
 
-        <div class="item">
-          <a href="#">
-            <img src="img/item_2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
-            <b>Профессиональная селфи-палка </b>
-            <span>1 500 РУБ.</span>
-          </a>
-        </div>
+          <div class="item">
+            <a href="#">
+              <img src="img/item_2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+              <b>Профессиональная<br> селфи-палка </b>
+              <span>1 500 РУБ.</span>
+            </a>
+          </div>
 
-        <div class="item">
-          <a href="#">
-            <img src="img/item_3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <b>Непотопляемая селфи-палка</b>
-            <span>2 500 РУБ.</span>
-          </a>
-        </div>
+          <div class="item">
+            <a href="#">
+              <img src="img/item_3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <b>Непотопляемая селфи-палка</b>
+              <span>2 500 РУБ.</span>
+            </a>
+          </div>
 
-        <div class="item">
-          <a href="#">
-            <img src="img/item_4.jpg" width="" height="" alt="Селфи-палка «Следуй за мной»">
-            <b>Селфи-палка «Следуй за мной»</b>
-            <span>4 900 РУБ.</span>
-          </a>
+          <div class="item">
+            <a href="#">
+              <img src="img/item_4.jpg" width="" height="" alt="Селфи-палка «Следуй за мной»">
+              <b>Селфи-палка «Следуй за мной»</b>
+              <span>4 900 РУБ.</span>
+            </a>
+          </div>
         </div>
+        
+        <div class="catalog-control">
+          <a href="#">Назад</a>
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          <a href="#">Вперед</a>
+        </div>        
       </div>
--->      
-      <div class="catalog-control">
-        <a href="#">Назад</a>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ul>
-        <a href="#">Вперед</a>
-      </div>
-    </div>
     </main>
 
     <footer class="main-footer">
       <div class="container">
         
         <div class="footer-logo">
-          <span>DEVICE</span>
+          <a href="index.html">DEVICE</a>
           <p class="address">г. Москва, ул. Строителей, 15</p>
+          
         </div>
         
         <div class="footer-login">
@@ -203,9 +225,9 @@
           </ul>
         
           <div class="footer-social">
-            <a class="social-btn social-btn-fb" href="#">facebook</a>
-            <a class="social-btn social-btn-inst" href="#">instagram</a>
-            <a class="social-btn social-btn-twit" href="#">twiter</a>
+            <a class="social-btn-fb" href="#">facebook</a>
+            <a class="social-btn-inst" href="#">instagram</a>
+            <a class="social-btn-twit" href="#">twiter</a>
           </div>
         </div>
         
