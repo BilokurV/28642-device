@@ -2,22 +2,36 @@
   font-family: Gilroy;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/gilroyextrabold.woff") format("woff"),
-       url("/fonts/Gilroyextrabold.ttf") format("truetype");
+  src: url("../fonts/gilroyextrabold.woff") format("woff"),
+       url("../fonts/Gilroyextrabold.ttf") format("truetype");
 }
 @font-face {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/gilroylight.woff") format("woff"),
-       url("/fonts/Gilroylight.ttf") format("truetype");
+  src: url("../fonts/gilroylight.woff") format("woff"),
+       url("../fonts/Gilroylight.ttf") format("truetype");
 }
 
 body {
+  bckground: #000 url("../img/device-index.jpg") no-repeat 50% 0;
+  background-size: 1440px auto;
+  opacity: 0.7;
+
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 1200px;
+  
   font-family: 'Open Sans', Gilroy, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: lighter;
+}
+
+body.inner {
+  background-color: #ffffff;
 }
 
 h1,h2 {
@@ -41,16 +55,6 @@ h3 {
   clear: both;
 }
 
-body {
-/*  For display with resolution 1280 px  */
-  background: #000 url("/img/device-catalog.jpg") no-repeat 50% 0;
-  background-size: 1440px auto;
-  opacity: 0.7;
-  
-  margin: 0 auto;
-  width: 1200px;
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -62,7 +66,7 @@ img{
 
 /*  Start header  */
 .container{
-  min-width: 1160px;
+  width: 1160px;
   margin: 0 20px;
   position: relative;
 }
@@ -235,17 +239,25 @@ a.logout{
 
 
 /*  Start main  */
-.slide{
+
+main.main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slide-1 img{
+  padding-left: 90px;
   margin-top: -115px;
-  margin-left: 5%;
-  margin-right: 5%;
   position: relative;
 }
 
-.slide img{
+.slide-img{
+  display: inline-block;
+  vertical-align: top;
   float: left;
-  margin-left: 30px;
-  
+  width: 600px;
 }
 
 .slide-2, .slide-3{
@@ -253,13 +265,15 @@ a.logout{
 }
 
 .slide-description{
-  padding-top: 80px;
-  margin-left: 500px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -35px;
 }
 
 .number{
   position: absolute;
-  right: 0px;
+  right: 55px;
+  top: -110px;
   width: 175px;
   
   
@@ -348,7 +362,7 @@ th{
 
 /*  example of FLEX  */
 .catalog-names{
-  margin-top: 115px;
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -388,12 +402,14 @@ th{
 }
 
 .services-slider{
+  width: 100%;
   margin-top: 185px;
   background-color: #e6e6e6;
   height: 287px;
 }
 
 .services-slider .container{
+  margin: 0 auto;
   position: relative;
   top: -100px;
   height: 320px;
@@ -450,7 +466,7 @@ th{
   height: 170px;
   right: 64px;
   top: 84px;
-  background-image: url(/img/delivery.png);
+  background-image: url(../img/delivery.png);
   background-repeat: no-repeat;
 }
 
@@ -528,19 +544,31 @@ th{
 }
 /* Start MAIN for catalog.html section */
 main.catalog{
-  margin-top: 45px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+}
 
-  display: flex;  /*  !!!!!!!  */
-  
-  flex-wrap: wrap;
-  justify-content: flex-start;
+.inner-container{
+  flex-grow: 1;
+  padding-left: 20px;
+  background-image: linear-gradient(to bottom, #dbdbdb 70px, #efefef 70px);
+  text-align: right;
+}
+
+.inner-container:last-child{
+  padding-left: 0;
+  padding-right: 20px;
+  background-image: linear-gradient(to bottom, #efefef 70px, #ffffff 70px);
+  text-align: left;
 }
 
 aside.filters{
+  margin-left: auto;
   width: 348px;
   display: inline-block;
   vertical-align: top;
-  background-color: #efefef;
+  text-align: left;
 }
 
 .filters h2{
@@ -550,7 +578,6 @@ aside.filters{
   padding-top: 7px;
   padding-bottom: 7px;
   
-  background-color: #dbdbdb;
   font-family: Gilroy;
   font-weight: 900;
   font-size: 16px;
@@ -662,12 +689,13 @@ aside.filters{
   display: flex;
   align-self: flex-start;
   flex-wrap: wrap;
+  margin-right: auto;
 }
 
 .sorting{
   width: 100%;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: auto;
   align-self: flex-start;
   background-color: #ebebeb;
 }
@@ -705,8 +733,8 @@ aside.filters{
 .sorting .keys-updown{
   display: inline-block;
   vertical-align: top;
-  float: right;
   margin-top: 28px;
+  margin-left: 170px;
   font-size: 0;
 }
 
@@ -714,12 +742,12 @@ aside.filters{
   display: inline-block;
   width: 20px;
   margin-left: 22px;
-  background-image: url(/img/arrow_up.png);
+  background-image: url(../img/arrow_up.png);
   background-repeat: no-repeat;
 }
 
 .sorting .keys-updown a:last-child{
-  background-image: url(/img/arrow_down.png);
+  background-image: url(../img/arrow_down.png);
 }
 
 .items{
@@ -795,13 +823,18 @@ aside.filters{
 
 /*  Start footer  */
 
-.main-footer{
-  width: 100%;
-  min-width: 1160px;
 
-  text-align: center;
+.main-footer {
+  width: 100%;
   background-color: #444444;
   margin-top: 34px;
+}
+
+.main-footer .container{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
   padding-top: 70px;
   color: #ffffff;
 }
@@ -848,7 +881,7 @@ aside.filters{
   right: -12px;
   width: 40px;
   height: 40px;
-  background-image: url(/img/icon_html.png);
+  background-image: url(../img/icon_html.png);
   background-repeat: no-repeat;
 }
 
@@ -899,16 +932,16 @@ aside.filters{
   height: 40px;
   margin-left: 10px;
   background-repeat: no-repeat;
-  background-image: url(/img/icon_f.png);
+  background-image: url(../img/icon_f.png);
   font-size: 0;
 }
 
 .footer-social .social-btn-inst{
-  background-image: url(/img/icon_inst.png);
+  background-image: url(../img/icon_inst.png);
 }
 
 .footer-social .social-btn-twit{
-  background-image: url(/img/icon_twit.png)
+  background-image: url(../img/icon_twit.png)
 }
 
 
