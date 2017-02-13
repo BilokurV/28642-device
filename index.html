@@ -69,8 +69,7 @@
             <h2>Делай селфи,<br>
               как Бен Стиллер!</h2>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            
-            <a class="detail" href="#">Подробнее</a>
+            <a class="btn detail" href="#">Подробнее</a>
             <table>
               <col span="3">
               <tr>
@@ -88,16 +87,17 @@
         </div>
         
         <div class="slide slide-2">
-          <img src="img/slide_2.png" width="345" height="485" alt="Фото Фитнес браслеты">
+          <div class="slide-img">
+            <img src="img/slide_2.png" width="345" height="485" alt="Фото Фитнес браслеты">
+          </div>
+          <span class="number">02</span>
           <div class="slide-description">
-            <span>02</span>
             <h2>Худеем<br>
-              правильно!
-            </h2>
+              правильно!</h2>
             <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            
-            <span>Подробнее</span>
+            <a class="btn detail" href="#">Подробнее</a>
             <table>
+              <col span="3">
               <tr>
                 <td>48 часов</td>
                 <td></td>
@@ -113,16 +113,17 @@
         </div>
         
         <div class="slide slide-3">
-          <img src="img/slide_3.png" width="526" height="334" alt="Фото Квадрокоптеры">
+          <div class="slide-img">
+            <img src="img/slide_3.png" width="526" height="334" alt="Фото Квадрокоптеры">
+          </div>
+          <span class="number">03</span>
           <div class="slide-description">
-            <span>03</span>
             <h2>Порхает как бабочка,<br>
-              жалит как пчела!
-            </h2>
+              жалит как пчела!</h2>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            
-            <span>Подробнее</span>
+            <a class="btn detail" href="#">Подробнее</a>
             <table>
+              <col span="3">
               <tr>
                 <td>800 м</td>
                 <td>50 м</td>
@@ -237,38 +238,39 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="detail" href="#">Подробнее о нас</a>
+          <a class="btn" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="map" href="#">
+          <a class="map" href="#window">
             <img src="img/map.jpg" width="560" height="222" alt="Карта расположения">
           </a>
-          <a class="detail" href="#">НАпишите нам</a>
+          <a class="btn" href="#">НАпишите нам</a>
         </section>
       </div>
+      
       
       <div class="popup write-us">
         <form action="https://echo.htmlacademy.ru" method=”post”>
           <label>Ваше имя:
-            <input type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </label>
           <label>Ваш e-mail:
-            <input type="email" name="email" value="email" placeholder="Для отправки ответа">
+            <input type="email" name="email" placeholder="Для отправки ответа">
           </label>
           <p>Текст письма:
-            <textarea name="emailtext" rows="5" cols="40" placeholder="В свободной форме">В свободной форме</textarea>
+            <textarea name="emailtext" rows="3" cols="40" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="btn" type="submit" name="write-us" value="write-us">Отправить</button>
+          <button class="btn" type="submit" name="write-us">Отправить</button>
         </form>
-        <button class="btn close" type="button" name="close" value="close">X</button>
+        <button class="btn-close" type="button" name="close">Close</button>
       </div>
       
-      <div class="popup map">
-        <img src="img/map.jpg" width="960" height="559" alt="Карта расположения">
-        <button class="btn close" type="button" name="close" value="close">X</button>
+      <div class="popup big-map" title="Карта расположения">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <button class="btn-close" type="button" name="close">Close</button>
       </div>
     </main>
     
