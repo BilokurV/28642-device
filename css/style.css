@@ -2,32 +2,32 @@
   font-family: 'Open Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"),       url("../fonts/opensanslight.ttf") format("truetype");
+  src: url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff'),       url('../fonts/opensanslight.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Open Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"),       url("../fonts/opensans.ttf") format("truetype");
+  src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff'),       url('../fonts/opensans.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Gilroy, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff"),       url("../fonts/Gilroyextrabold.ttf") format("truetype");
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff'),       url('../fonts/Gilroyextrabold.ttf') format('truetype');
 }
 @font-face {
   font-family: Gilroy, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/gilroylight.woff2") format("woff2"),
-  url("../fonts/gilroylight.woff") format("woff"),
-  url("../fonts/Gilroylight.ttf") format("truetype");
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+  url('../fonts/gilroylight.woff') format('woff'),
+  url('../fonts/Gilroylight.ttf') format('truetype');
 }
 
 body {
-  background: #000 url("../img/device-index.jpg") no-repeat 50% 0px;
+  background: #000 url('../img/device-catalog.jpg') no-repeat 50% 0px;
   background-size: 1440px auto;
   opacity: 0.7;
   
@@ -58,7 +58,7 @@ h3 {
 
 
 .clearfix::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -487,7 +487,7 @@ th{
   display: inline-block;
   border-right: 7px solid #000;
   min-width: 100px;
-  width: 278px;
+  width: 277px;
   padding-top: 80px;
   padding-bottom: 50px;
   margin-left: -1px;
@@ -495,12 +495,7 @@ th{
 
 .services-slider label{
   display: block;
-  padding-left: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   margin-bottom: 24px;
-  position: relative;
-  cursor: pointer;
   font-family: Gilroy, Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   color: black;
@@ -508,12 +503,49 @@ th{
   letter-spacing: 0.2em;
 }
 
-#btn-1:checked ~ div label[for="btn-1"],
-#btn-2:checked ~ div label[for="btn-2"],
-#btn-3:checked ~ div label[for="btn-3"] {
-  color: #ffe27f;  
-  background-color: #000000;
+.services-slider label span{
+  display: inline-block;
+  position: relative;
+  width: 160px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 0;
 }
+
+.services-slider label span::before{
+  content: '';
+  position: absolute;
+  height: 8px;
+  left: 0;
+  right: 0;
+  top: 16px;
+  background-color: #ffc600;
+  z-index: -1;
+}
+.services-slider label span:hover{
+  background-color: #ffc600;
+}
+
+.services-slider label span:active{
+  background-color: #000;
+}
+.services-slider label span:active::before{
+  content: none;
+}
+
+#btn-1:checked ~ div label[for='btn-1'],
+#btn-2:checked ~ div label[for='btn-2'],
+#btn-3:checked ~ div label[for='btn-3'] {
+  color: #ffe27f;  
+  background-color: #000000;  
+}
+#btn-1:checked ~ div label[for='btn-1'] span::before,
+#btn-2:checked ~ div label[for='btn-2'] span::before,
+#btn-3:checked ~ div label[for='btn-3'] span::before {
+  content: none;
+}
+
 
 .service-item{
   display: inline-block;
@@ -889,11 +921,8 @@ aside.filters{
   margin-right: auto;
 }
 
-.filters a.btn{
+.filters .btn{
   margin-top: 27px;
-  border: 0 solid rgba( 0, 0, 0, 0);
-  outline: none;
-  background-image: none;
 }
 
 
@@ -1050,7 +1079,7 @@ aside.filters{
   align-self: flex-end;
   width: 760px;
   margin-left: 72px;
-  margin-bottom: 38px;
+  margin-bottom: 78px;
   line-height: 70px;
   text-align: center;
   
@@ -1116,7 +1145,6 @@ aside.filters{
 .main-footer {
   width: 100%;
   background-color: #444444;
-  margin-top: 40px;
 }
 
 .main-footer a{
