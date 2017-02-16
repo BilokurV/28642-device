@@ -15,7 +15,8 @@
 
         <div class='main-navigation clearfix'>
           <form action='https://echo.htmlacademy.ru' method=”post”>
-            <input type='search' name='search' placeholder='Поиск по сайту'>
+            <input class="search-heald" type='search' name='search' placeholder='Поиск по сайту'>
+            <button class="search-btn" type="submit">Найти</button>
           </form>
 
           <a class='login' href='#'>Войти</a>
@@ -25,7 +26,7 @@
         
         <nav class='main-menu'>
           <ul class='level'>
-            <li>
+            <li class="first-name">
               <a href='#'>каталог товаров</a>
 
               <div class='menu-catalog'>
@@ -142,52 +143,50 @@
           <input type='radio' id='btn-01' name='slide' checked>
           <input type='radio' id='btn-02' name='slide'>
           <input type='radio' id='btn-03' name='slide'>
-          <div>
-            <label for='btn-01'></label>
-            <label for='btn-02'></label>
-            <label for='btn-03'></label>
-          </div>
+          <label for='btn-01'></label>
+          <label for='btn-02'></label>
+          <label for='btn-03'></label>
         </div>
       </section>
       
       <section class='catalog-names container'>
         <a href='#'>
-            <div>
+            <div class="cont-img">
               <img src='img/popular_1.png' width='97' height='55' alt='Виртуальная реальность'>
             </div>
             <span>Виртуальная реальность</span>
         </a>
         
-        <a href='#'>
-            <div>
+        <a class="down-flex" href='#'>
+            <div class="cont-img">
               <img src='img/popular_2.png' width='86' height='117' alt='Моноподы для селфи'>
             </div>
             <span>Моноподы для селфи</span>
         </a>
         
         <a href='#'>
-            <div>
+            <div class="cont-img">
               <img src='img/popular_3.png' width='71' height='87' alt='Экшн-камеры'>
             </div>
             <span>Экшн-камеры</span>
         </a>
         
         <a href='#'>
-            <div>
+            <div class="cont-img">
               <img src='img/popular_4.png' width='107' height='65' alt='Фитнесс браслеты'>
             </div>
             <span>Фитнесс браслеты</span>
         </a>
         
         <a href='#'>
-            <div>
+            <div class="cont-img">
               <img src='img/popular_5.png' width='56' height='98' alt='Умные часы'>
             </div>
             <span>Умные часы</span>
         </a>
         
         <a href='#'>
-            <div>
+            <div class="cont-img">
               <img src='img/popular_6.png' width='132' height='69' alt='Квадрокоптеры'>
             </div>           <span>Квадрокоптеры</span>
         </a>
@@ -287,10 +286,11 @@
           <a href='#'>Сравнить</a>
           <a href='#'>Корзина</a>
           <p class='phone'>Тел.: +7 (495) 495-95-95</p>
+          <a class="icon-academy" href="#" alt=''>icon-academy</a>
         </div>
         
         <div class='footer-menu'>
-          <ul>
+          <ul class='menu-centre'>
             <li><a href='#'>Доставка</a></li>
             <li><a href='#'>Гарантия</a></li>
             <li><a href='#'>Контакты</a></li>
