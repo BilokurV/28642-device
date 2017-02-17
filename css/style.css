@@ -1,24 +1,24 @@
 @font-face {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff'),       url('../fonts/opensanslight.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff'),       url('../fonts/opensans.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: Gilroy;
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff'),       url('../fonts/Gilroyextrabold.ttf') format('truetype');
 }
 @font-face {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: Gilroy;
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/gilroylight.woff2') format('woff2'),
@@ -107,9 +107,19 @@ img {
   background-position: 5px 2px;
   color: rgba( 0, 0, 0, 0.3);
 }
-.main-navigation input:hover {
-  color: rgba( 0, 0, 0, 0.6);
-}
+
+.search-heald::-webkit-input-placeholder {color: rgba( 0, 0, 0, 0.3)}
+.search-heald::-moz-placeholder          {color: rgba( 0, 0, 0, 0.3)}
+.search-heald:-ms-input-placeholder      {color: rgba( 0, 0, 0, 0.3)}
+
+.search-heald:hover::-webkit-input-placeholder {color: rgba( 0, 0, 0, 0.6)}
+.search-heald:hover::-moz-placeholder          {color: rgba( 0, 0, 0, 0.6)}
+.search-heald:hover:-ms-input-placeholder      {color: rgba( 0, 0, 0, 0.6)}
+
+.search-heald:focus::-webkit-input-placeholder {color: rgba( 0, 0, 0, 1)}
+.search-heald:focus::-moz-placeholder          {color: rgba( 0, 0, 0, 1)}
+.search-heald:focus:-ms-input-placeholder      {color: rgba( 0, 0, 0, 1)}
+
 .main-navigation input:focus {
   color: rgba( 0, 0, 0, 1);
   border-bottom: 2px solid black;
@@ -118,6 +128,7 @@ img {
 .main-navigation .search-btn {
   visibility: hidden;
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   left: 355px;
   bottom: 4px;
@@ -143,6 +154,7 @@ img {
 
 .main-navigation a {
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 3px;
   padding-left: 31px;
   background-repeat: no-repeat;
@@ -196,6 +208,7 @@ img {
 
 .level>li {
   display: inline-block;
+  vertical-align: baseline;
   width: 130px;
 }
 
@@ -207,10 +220,12 @@ img {
 
 .first-name:hover .menu-catalog{
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .menu-catalog:hover{
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .first-name:after {
@@ -224,6 +239,9 @@ img {
 }
 .first-name:hover:after{
   color: rgba( 0, 0, 0, 0.2)
+}
+.first-name:active:after{
+  color: rgba( 0, 0, 0, 0.1)
 }
 
 
@@ -240,7 +258,7 @@ img {
   width: 1140px;
   top: 130px;
   left: 0px;
-  background-color: #ffe393;
+  background-color: #ffe27f;
   padding-top: 40px;
   padding-left: 20px;
   padding-bottom: 40px;
@@ -248,8 +266,9 @@ img {
   
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
+  font-weight: 300;
   text-transform: none;
-  letter-spacing: normal;
+  letter-spacing: 0.01em;
 }
 
 .menu-catalog ul{
@@ -295,6 +314,7 @@ img {
 
 .breadcrumbs li{
   display: inline-block;
+  vertical-align: baseline;
   letter-spacing: -0.01em;
   color: rgba(0,0,0,0.3);
 }
@@ -379,6 +399,7 @@ img {
 
 .btn{
   display: inline-block;
+  vertical-align: baseline;
   padding: 0 42px;
   margin: 42px 0;
   position: relative;
@@ -441,6 +462,7 @@ img {
 
 .slider-buttons{
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   left: 390px;
   bottom: 161px;
@@ -453,6 +475,7 @@ img {
 .slider-buttons label{
   margin: 0 9px;
   display: inline-block;
+  vertical-align: baseline;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -482,6 +505,7 @@ img {
 
 .catalog-names a{
   display: inline-block;
+  vertical-align: baseline;
   width: 160px;
 }
 
@@ -563,6 +587,7 @@ img {
 
 .services-slider .slides{
   display: inline-block;
+  vertical-align: baseline;
   border-right: 7px solid #000;
   min-width: 100px;
   width: 277px;
@@ -583,6 +608,7 @@ img {
 
 .services-slider span{
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   width: 150px;
   padding-left: 11px;
@@ -628,6 +654,7 @@ img {
 
 .service-item{
   display: inline-block;
+  vertical-align: baseline;
   max-width: 455px;
   margin-left: 113px;
   letter-spacing: 0.019em;
@@ -636,6 +663,7 @@ img {
 .delivery:before{
   content: '';
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   width: 140px;
   height: 170px;
@@ -664,6 +692,7 @@ img {
 
 .logotypes a{
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .logotypes img{
@@ -676,6 +705,7 @@ img {
 
 .info{
   display: inline-block;
+  vertical-align: baseline;
   width: 41%;
   padding-right: 118px;
   padding-top: 4px;
@@ -685,6 +715,7 @@ img {
 .info:before, .contacts:before{
   content: '';
   display: inline-block;
+  vertical-align: baseline;
   width: 80px;
   height: 7px;
   background-color: #000000;
@@ -733,6 +764,7 @@ img {
 
 .contacts .map{
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 24px;
   margin-right: -1px;
   margin-bottom: 20px;
@@ -768,6 +800,7 @@ img {
 .write-us label{
   width: 360px;
   display: inline-block;
+  vertical-align: baseline;
   font-family: Gilroy, Arial, sans-serif; font-size: 18px;
   font-weight: 900;
 }
@@ -972,6 +1005,7 @@ aside.filters{
 .price-controls label {
   font-size: 14px;
   display: inline-block;
+  vertical-align: baseline;
   width: 44%;
   opacity: 0.2;
 }
@@ -1039,12 +1073,14 @@ aside.filters{
 .sorting{
   width: 100%;
   display: inline-block;
+  vertical-align: baseline;
   margin-right: auto;
   align-self: flex-start;
 }
 
 .sorting h2{
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 72px;
   padding-right: 50px;
   padding-top: 7px;
@@ -1058,6 +1094,7 @@ aside.filters{
 
 .sorting form{
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .sorting label{
@@ -1083,6 +1120,7 @@ aside.filters{
 
 .keys-updown a{
   display: inline-block;
+  vertical-align: baseline;
   width: 20px;
   margin-left: 22px;
   background-image: url(../img/arrow_up.png);
@@ -1127,6 +1165,7 @@ aside.filters{
 
 .item-hover .to-basket{
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   text-align: center;
   top: 170px;
@@ -1149,6 +1188,7 @@ aside.filters{
 
 .item .to-compare{
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   top: 220px;
   left: 110px;
@@ -1180,12 +1220,12 @@ aside.filters{
 .item span{
   float: right;
   font-size: 16px;
-  vertical-align: top;
   text-transform: lowercase;
 }
 
 .catalog-control{
   display: inline-block;
+  vertical-align: baseline;
   align-self: flex-end;
   width: 760px;
   margin-left: 72px;
@@ -1202,6 +1242,7 @@ aside.filters{
 
 .catalog-control a{
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .catalog-control>a:first-child{
@@ -1225,12 +1266,14 @@ aside.filters{
 
 .catalog-control ul{
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 0;
   margin: 0;
 }
 
 .catalog-control li{
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 10px;
   padding-right: 7px;
 }
@@ -1295,6 +1338,7 @@ aside.filters{
 
 .footer-logo a{
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 0px;
   margin-left: -1px;
   font-family: Gilroy, Arial, sans-serif; font-weight: 900;
@@ -1326,6 +1370,7 @@ aside.filters{
 
 .main-footer .icon-academy{
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
   width: 20px;
   height: 40px;
@@ -1380,13 +1425,15 @@ aside.filters{
 
 .footer-menu{
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 49px;
   margin-left: 99px;
   padding-bottom: 10px;
 }
 
 .footer-menu li{
-  display: inline-block;  
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .footer-menu li:nth-child(2){
@@ -1418,6 +1465,7 @@ aside.filters{
 
 .footer-social a{
   display: inline-block;
+  vertical-align: baseline;
   width: 40px;
   height: 40px;
   margin-left: 11px;
