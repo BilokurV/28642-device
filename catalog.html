@@ -102,34 +102,27 @@
 
           <h3>Цвет</h3>
           <div class='color'>
-            <label>
-              <input type='checkbox' name='black' value='black' checked>чёрный
-            </label>
-            <label>
-              <input type='checkbox' name='white' value='white'>белый
-            </label>
-            <label>
-              <input type='checkbox' name='blue' value='blue' checked>синий
-            </label>
-            <label>
-              <input type='checkbox' name='red' value='red' checked>красный
-            </label>
-            <label>
-              <input type='checkbox' name='purple' value='purple'>розовый
-            </label>
+            <input id="black" type='checkbox' name='black' value='black' checked>
+            <label for="black">чёрный</label>
+            <input id="white" type='checkbox' name='white' value='white'>
+            <label for="white">белый</label>
+            <input id="blue" type='checkbox' name='blue' value='blue' checked>
+            <label for="blue">синий</label>
+            <input id="red" type='checkbox' name='red' value='red' checked>
+            <label for="red">красный</label>
+            <input id="pink" type='checkbox' name='purple' value='purple'>
+            <label for="pink">розовый</label>
           </div>
 
           <h3>Bluetooth</h3>
           <div class='bluetooth'>
-            <label>
-              <input type='radio' name='bluetooth' value='yes' checked>Есть
-            </label>
-            <label>
-              <input type='radio' name='bluetooth' value='no'>Нет
-            </label>
+            <input id="yes" type='radio' name='bluetooth' value='yes' checked>
+            <label for="yes">Есть</label>
+            <input id="no" type='radio' name='bluetooth' value='no'>
+            <label for="no">Нет</label>
           </div>
 
-          <button class='btn' type='submit'>Показать</button>
+          <button class='btn' type='submit' formaction="#">Показать</button>
           </form>
         </div>
       </aside>
@@ -239,7 +232,7 @@
         </div>
         
         <div class='footer-login'>
-          <a href='#'>Войти</a>
+          <a href='#'>Выйти</a>
           <a href='#'>Сравнить</a>
           <a href='#'>Корзина</a>
           <p class='phone'>Тел.: +7 (495) 495-95-95</p>
