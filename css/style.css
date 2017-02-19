@@ -419,7 +419,7 @@ img {
   position: absolute;
   display: inline-block;
   height: 6px;
-  top: 15px;
+  top: 16px;
   right: 1px;
   left: 0;
   z-index: -1;
@@ -847,6 +847,7 @@ img {
 
 
 .big-map iframe {
+  background-color: #ebebeb;
   background-image: url(../img/big_map.jpg);
   background-size: contain;
 }
