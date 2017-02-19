@@ -12,13 +12,13 @@
 }
 
 @font-face {
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff'),       url('../fonts/Gilroyextrabold.ttf') format('truetype');
 }
 @font-face {
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/gilroylight.woff2') format('woff2'),
@@ -77,7 +77,7 @@ img {
   top: -15px;
   margin-left: 56px;
   letter-spacing: 0.01em;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 48px;
   color: black;
 }
@@ -194,7 +194,7 @@ img {
   margin-top: 35px;
   padding-bottom: 29px;
   
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   color: black;
   text-transform: uppercase;
@@ -293,7 +293,7 @@ img {
 }
 /* Start HEADER for catalog.html section */
 .inner h1 {
-  font-family: Gilroy, Arial, sans-serif; font-size: 47px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 47px;
   line-height: 56px;
   font-weight: 900;
   margin: 0;
@@ -346,7 +346,7 @@ img {
 }
 
 .main h2 {
-  font-family: Gilroy, Arial, sans-serif; font-size: 47px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 47px;
   line-height: 56px;
   font-weight: 900;
   margin: 0;
@@ -384,7 +384,7 @@ img {
   top: -110px;
   width: 175px;
   
-  font-family: Gilroy, Arial, sans-serif; font-size: 180px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 180px;
   font-weight: 900;
   line-height: 150px;
   color: #ffffff;
@@ -406,7 +406,7 @@ img {
   border: none;
   background-color: transparent;
   line-height: 40px;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   color: black;
   text-transform: uppercase;
@@ -448,7 +448,7 @@ img {
 }
 
 .slide-description td{
-  font-family: Gilroy, Arial, sans-serif; font-size: 36px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 36px;
   line-height: 58px;
 }
 
@@ -556,7 +556,7 @@ img {
 
 .catalog-names span{
   display: inline-block;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   color: black;
   line-height: 21px;
@@ -601,7 +601,7 @@ img {
 .services-slider label{
   display: block;
   margin-bottom: 24px;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   color: black;
   text-transform: uppercase;
@@ -737,7 +737,7 @@ img {
 .info ul{
   padding: 0;
   margin-top: 66px;
-  font-family: Gilroy, Arial, sans-serif; font-size: 16px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 16px;
   font-weight: 900;
 }
 
@@ -791,6 +791,10 @@ img {
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
+.write-us-show, .map-show{
+  display: block;
+}
+
 .write-us{
   background-color: white;
   width: 760px;
@@ -804,7 +808,7 @@ img {
   width: 360px;
   display: inline-block;
   vertical-align: baseline;
-  font-family: Gilroy, Arial, sans-serif; font-size: 18px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 18px;
   font-weight: 900;
 }
 
@@ -814,7 +818,7 @@ img {
 
 .write-us p{
   margin-top: 40px;
-  font-family: Gilroy, Arial, sans-serif; font-size: 18px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 18px;
   font-weight: 900;
 }
 
@@ -927,7 +931,7 @@ aside.filters{
   padding-top: 7px;
   padding-bottom: 7px;
   
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 900;
   font-size: 16px;
   text-transform: uppercase;
@@ -945,7 +949,7 @@ aside.filters{
   margin-bottom: 0;
   padding: 10px 0;
   border-top: 2px solid #000000;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 900;
@@ -1015,7 +1019,7 @@ aside.filters{
 }
 
 .price-controls input {
-  font-family: Gilroy, Arial, sans-serif; font-size: 14px;
+  font-family: 'Gilroy', Arial, sans-serif; font-size: 14px;
   width: 33px;
   color: #283136;
   border: none;
@@ -1142,7 +1146,7 @@ aside.filters{
   padding-top: 7px;
   padding-bottom: 7px;
   
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.225em;
@@ -1241,7 +1245,7 @@ aside.filters{
   height: 40px;
   background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 16px, #ffc600 16px, #ffc600 24px, rgba(255,255,255, 0) 24px);
   color: black;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   letter-spacing: 0.2em;
   line-height: 40px;
@@ -1279,7 +1283,7 @@ aside.filters{
   display: inline-block;
   vertical-align: top;
   width: 270px;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.015em;
@@ -1306,7 +1310,7 @@ aside.filters{
   text-align: center;
   
   background-color: #ebebeb;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1414,7 +1418,7 @@ aside.filters{
   vertical-align: baseline;
   margin-top: 0px;
   margin-left: -1px;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 48px;
   color: #ffe27f;
   opacity: 1;
@@ -1535,7 +1539,7 @@ aside.filters{
 
 .menu-centre a{
   color: #ffffff;
-  font-family: Gilroy, Arial, sans-serif; font-weight: 900;
+  font-family: 'Gilroy', Arial, sans-serif; font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
