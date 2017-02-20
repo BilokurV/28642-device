@@ -772,6 +772,7 @@ img {
     display: block;
 }
 .write-us {
+    dsplay: block;
     background-color: white;
     width: 760px;
     height: 359px;
@@ -808,6 +809,20 @@ img {
     border: none;
     overflow: hidden;
 }
+.write-us input:hover,
+.write-us textarea:hover {
+    background-color: #ebebeb;
+}
+.write-us input:focus,
+.write-us textarea:focus {
+    background-color: #fff;
+    outline-color: #e5e5e5;
+}
+
+.input-error{
+  background-color: #e5e5e5;
+}
+
 .write-us input {
     width: 340px;
 }
@@ -1126,13 +1141,18 @@ aside.filters {
     display: inline-block;
     vertical-align: baseline;
     width: 18px;
+    height: 10px;
     margin-left: 22px;
     background-image: url(../img/arrow_up.png);
     background-repeat: no-repeat;
     font-size: 0;
+    opacity: 0.2;
 }
 .keys-updown a:hover {
-  
+  opacity: 0.4;
+}
+.keys-updown a: {
+  opacity: 1;
 }
 
 .keys-updown a:last-child {
