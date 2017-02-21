@@ -555,14 +555,14 @@ img {
 .services-slider {
     width: 100%;
     margin-top: 185px;
-    background-color: #e6e6e6;
-    height: 288px;
+    background-image: linear-gradient(to bottom, #e6e6e6 90%, #fff 90%);
+    margin-bottom: -31px;
 }
+
 .services-slider .container {
     margin: 0 auto;
     position: relative;
     top: -100px;
-    height: 320px;
     padding-left: 2px;
 }
 .services-slider input {
@@ -570,10 +570,9 @@ img {
 }
 .services-slider .slides {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
     border-right: 7px solid #000;
-    min-width: 100px;
-    width: 277px;
+    min-width: 277px;
     padding-top: 80px;
     padding-bottom: 47px;
     margin-left: -1px;
@@ -592,7 +591,7 @@ img {
     display: inline-block;
     vertical-align: baseline;
     position: relative;
-    width: 150px;
+    min-width: 150px;
     padding-left: 11px;
     text-align: center;
     line-height: 40px;
@@ -632,22 +631,16 @@ img {
 .service-item {
     display: inline-block;
     vertical-align: baseline;
-    max-width: 455px;
+    max-width: 472px;
+    padding-top: 66px;
+    padding-right: 220px;
     margin-left: 113px;
     letter-spacing: 0.019em;
-}
-.delivery:before {
-    content: '';
-    display: inline-block;
-    vertical-align: baseline;
-    position: absolute;
-    width: 140px;
-    height: 170px;
-    right: 63px;
-    top: 85px;
     background-image: url(../img/delivery.png);
     background-repeat: no-repeat;
+    background-position: 558px 85px;
 }
+
 .service-item h2 {
     padding-bottom: 13px;
     padding-left: 4px;
@@ -660,6 +653,7 @@ img {
 .logotypes {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 95px;
     padding-bottom: 74px;
 }
@@ -1480,6 +1474,7 @@ aside.filters {
 .footer-menu {
     display: inline-block;
     vertical-align: baseline;
+    max-width: 530px;
     margin-top: 49px;
     margin-left: 99px;
     padding-bottom: 10px;
@@ -1490,6 +1485,7 @@ aside.filters {
 .footer-menu li {
     display: inline-block;
     vertical-align: baseline;
+    margin: 0 10px;
 }
 .footer-menu li:nth-child(2) {
     margin-left: 30px;
